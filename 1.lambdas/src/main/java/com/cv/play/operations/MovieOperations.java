@@ -7,7 +7,7 @@ import java.util.stream.Collectors;
 import com.cv.play.model.Movie;
 
 public class MovieOperations {
-	
+	// Sorting and filtering operations performed on lists of movies
 	public static void sortByName(List<Movie> movies){
 		Collections.sort(movies, 
 				(m1,m2) -> { return m1.getName().compareTo(m2.getName());});
