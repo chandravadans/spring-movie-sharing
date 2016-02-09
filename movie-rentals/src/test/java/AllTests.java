@@ -37,6 +37,11 @@ public class AllTests {
 		
 		Assert.assertEquals(3, moviesByActor.size());
 		
+		//The Java 8 way! :)
+		moviesByActor.stream().forEach(m -> Assert.assertEquals(actor, m.getLeadActor()));
+		
+		
+		//Old way
 		for(Movie m : moviesByActor){
 			System.out.println(m.getName());
 			if(m.getLeadActor().compareToIgnoreCase(actor)!=0)
@@ -66,7 +71,4 @@ public class AllTests {
 				Assert.fail(sorted.get(i).getName()+" was released later than "+sorted.get(i+1).getName()+" !");
 		}
 	}
-	
-	
-
 }
