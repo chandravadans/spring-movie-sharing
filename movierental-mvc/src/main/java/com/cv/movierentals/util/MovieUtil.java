@@ -20,7 +20,7 @@ import org.springframework.stereotype.Component;
 import com.cv.movierentals.interfaces.MovieSearcher;
 import com.cv.movierentals.models.Movie;
 
-public class MoveUtil {
+
 	@Component("MovieUtil")
 	@PropertySource("classpath:app.properties")
 	public class MovieUtil {
@@ -93,6 +93,6 @@ public class MoveUtil {
 			return searcher.filterByActress(memoryCache, actress);
 		}
 	}
-}
+
 
 

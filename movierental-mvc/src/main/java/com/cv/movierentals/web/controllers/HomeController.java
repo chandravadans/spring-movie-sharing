@@ -1,5 +1,6 @@
 package com.cv.movierentals.web.controllers;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.cv.movierentals.models.Movie;
-import com.cv.movierentals.util.MoveUtil.MovieUtil;
+import com.cv.movierentals.util.MovieUtil;
 
 @Controller
 public class HomeController {
